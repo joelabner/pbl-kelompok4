@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: #4d9e98;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .register{
+                background-color:#66b3ad;
+                display: grid;
+                margin-right: 400px;
+                margin-left: 400px;
+                padding: 50px;
+                justify-content: center;
+                font-family:Arial, Helvetica, sans-serif;
+                color:rgb(229, 229, 245);
+                border-radius:18px;
+                align-content:center;
+                margin-top: 70px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                
+            }
+
+            input[type=text], select{
+            width: 100%;
+            padding: 7px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family:Arial, Helvetica, sans-serif;
+            resize: vertical;
+            }
+            input[type=password], select{
+            width: 100%;
+            padding: 7px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family:Arial, Helvetica, sans-serif;
+            resize: vertical;
+            }
+            input[type=email], select{
+            width: 100%;
+            padding: 7px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family:Arial, Helvetica, sans-serif;
+            resize: vertical;
+            }
+            label{
+                margin-top: 10px;
+            }
+            h1{
+                text-align: center;
+            }
+
+            button {
+            background-color: #24921a;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 1;
+            transition: 0.3s;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+         width: 100%;
+            margin-top: 0;
+            }
+        }
+        button:hover {opacity: 0.6}
+        </style>
+    </head>
+    <body>
+        <div class="register">
+        <h1>Registrasi </h1>
+                <label for="Nama">Nama</label>
+                <input type="text" id="Nama" nama="Nama" placeholder="John Doe" required><br>
+                <label for="Kelas">Kelas</label>
+                <select name="kelas" id="kelas" aria-placeholder="Pilih Kelas Anda" required>
+                    <option value="x1">X1</option>
+                    <option value="x2">X2</option>
+                    <option value="x3">X3</option>
+                    <option value="x4">X4</option>
+                    <option value="x5">X5</option>
+                    <option value="x6">X6</option>
+                    <option value="x7">X7</option>
+                    <option value="x8">X8</option>
+                    <option value="xi1">XI1</option>
+                    <option value="xi2">XI2</option>
+                    <option value="xi3">XI3</option>
+                    <option value="xi4">XI4</option>
+                    <option value="xi5">XI5</option>
+                    <option value="xi6">XI6</option>
+                    <option value="xi7">XI7</option>
+                    <option value="xi8">XI8</option>
+                    <option value="xii1">XII1</option>
+                    <option value="xii2">XII2</option>
+                    <option value="xii3">XII3</option>
+                    <option value="xii4">XII4</option>
+                    <option value="xii5">XII5</option>
+                    <option value="xii6">XII6</option>
+                    <option value="xii7">XII7</option>
+                    <option value="xii8">XII8</option>
+                </select><br>
+             <label for="Absen">Presensi</label>
+             <input type="text" id="Absen" nama="Absen" placeholder="36" max="40" min="0" required><br>
+             <label for="Email">Email</label>
+             <input type="email" id="Email" nama="Email" placeholder="mail@gonzaga.sch.id" required><br>
+             <label for="Password">Password</label>
+             <input type="password" id="Password" nama="Password" required>
+             <br>
+             <button type="submit">Submit</button>
+             <br><p class="message">Already have an account? <a href="login.html">Log In</a></p>
+            </div>
+        </body>
+</html>
