@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Validasi NIK: Harus 16 digit angka
     if (!preg_match('/^\d{16}$/', $nik)) {
         echo '<p class="w3-text-red w3-xlarge">❌ NIK tidak valid.<br>Harus terdiri dari 16 digit angka.</p>';
-        echo '<a href="pbl.html" class="w3-button w3-margin-top w3-blue">Kembali ke Form</a>';
+        echo '<a href="index.html" class="w3-button w3-margin-top w3-blue">Kembali ke Form</a>';
         echo '</div></div></body></html>';
         exit;
     }
@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Validasi jumlah: Harus angka positif
     if (!is_numeric($jumlah) || $jumlah <= 0) {
         echo '<p class="w3-text-red w3-xlarge">❌ Jumlah pesanan tidak valid.</p>';
-        echo '<a href="pbl.html" class="w3-button w3-margin-top w3-blue">Kembali ke Form</a>';
+        echo '<a href="index.html" class="w3-button w3-margin-top w3-blue">Kembali ke Form</a>';
         echo '</div></div></body></html>';
         exit;
     }
@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "<p><strong>NIK:</strong> $nik<br>";
     echo "<strong>Jumlah LPG:</strong> $jumlah tabung<br>";
     echo "<strong>Total:</strong> Rp " . number_format($total, 0, ',', '.') . "</p>";
-    echo '<a href="pbl.html" class="w3-button w3-margin-top w3-green">Kembali ke Form</a>';
+    echo '<a href="index.html" class="w3-button w3-margin-top w3-green">Kembali ke Form</a>';
 } else {
     echo '<p class="w3-text-red w3-xlarge">Akses langsung tidak diperbolehkan.</p>';
 }
