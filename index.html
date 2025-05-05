@@ -1,17 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+    body, html {
+      height: 100%;
+      font-family: "arial", sans-serif;
+    }
 
-</style>
-<script>
-    
-</script>
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://cdn.antaranews.com/cache/1200x800/2024/10/17/98FB777F-83F0-4A81-B45F-736621239C66.jpeg");
+      min-height: 75%;
+    }
+
+    .menu {
+      display: none;
+    }
+    </style>
+  </head>
 <body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">BERANDA</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">TENTANG KAMI</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">LOKASI KAMI</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#regis" class="w3-button w3-block w3-black">PROTOTYPE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Project Based Learning</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px"><b>LPG<br>untuk Semua</b> </span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Jalan Pejaten Barat 10A</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">TENTANG KAMI</span></h5>
+    <p>Kami adalah sekelompok siswa-siswi dari <b>SMA Kolese Gonzaga</b>, yang tergabung dalam kelompok empat PBL Semester II.
+    Kelompok ini dibentuk dengan tujuan membantu pemerintah dalam mendata masyarakat supaya subsidi gas LPG 3kg dapat didistribusikan dengan
+     baik dan tepat sasaran.
+    </p>
+    <p>Hal ini menjadi basis penelitian kami, dengan mengangkat tema "Usaha Pemerintah dalam Pengentasan Kemiskinan".</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Setiap langkah kecil pada hari ini merupakan fondasi bagi kemajuan besar di kemudian hari" -VN</i></p>
+      <p>Anggota: <br>
+        <b>Benetta Adonia Francisca (04)<br>
+        Joel Abner Haryono (22)<br>
+        Shaka Arziel Pratama (33)<br>
+        Vinentius Nathanael Tampomas (35)<br>
+
+    </b>
+
+
+      </p>
+    </div>
+    <img src="kelompok.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Email:</strong> x6@gonzaga.sch.id</p>
+    <p><strong>Nomor Telepon:</strong> 0812 3456 7890</p>
+  </div>
+</div>
+
+
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">LOKASI KAMI</span></h5>
+
+    <p>Lokasi kami berada di SMA Kolese Gonzaga, yang terletak di Jalan Pejaten Barat 10A, Ragunan, Ps. Minggu, Jakarta Selatan. DK Jakarta</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.893578344162!2d106.81986767573208!3d-6.277720261453041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f2218fc4eb3b%3A0xe0ad8eff68ec4b59!2sSMA%20Kolese%20Gonzaga%2C%20Jl.%20Pejatan%20Bar.%2C%20RT.2%2FRW.10%2C%20Ragunan%2C%20Ps.%20Minggu%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012540!5e0!3m2!1sen!2sid!4v1746346622632!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <p><span class="w3-tag">FYI!</span> SMA Kolese Gonzaga adalah sekolah swasta Katolik yang terletak di Jalan Pejaten Barat nomor 10 A. Sekolah ini berdiri pada tahun
+    1987 dengan nama Kolese Kanisius Unit Selatan sebelum diganti pada tahun 1988. Nama Gonzaga sendiri diambil dari nama santo pelindung sekolah, Santo Aloysius Gonzaga. SMA Kolese Gonzaga menjunjung tinggi semboyan <b>Ad Maiorem Dei Gloriam</b>. </p>
     
+    <img src="https://www.dbl.id/thumbs/extra-large/uploads/post/2019/09/09/TFQ_2130.jpg" class="w3-image" style="width:100%">
+
+<div class="w3-container" id="regis">
+    <p><strong>Registrasi pemesanan gas LPG</strong> ada di bawah ini. Ini adalah purwarupa (prototype) yang 
+      disajikan sebagai solusi dari kelompok kami untuk mengatasi masalah ini. 
+      Form ini bekerja dengan input NIK berjumlah 16 digit yang terdaftar di pemerintah, 
+      lalu pilih jumlah pesanan gas LPG. Bagi yang ingin mencoba, silakan langsung mengisi form!
+    </p>
+
+
+    <form method="POST" action="action.php">
+      <fieldset>
+        <legend><strong>Form Pemesanan LPG</strong></legend>
+    
+        <label for="nik">Nomor Induk Kependudukan (NIK):</label><br>
+        <input type="text" id="nik" name="nik" maxlength="16" pattern="\d{16}" required placeholder="16 digit angka"><br><br>
+    
+        <label for="jumlah">Jumlah Pesanan (tabung LPG):</label><br>
+        <input type="number" id="jumlah" name="jumlah" min="1" required placeholder="Masukkan jumlah"><br><br>
+    
+        <button type="submit">Pesan Sekarang</button>
+      </fieldset>
+    </form>
+    <a href="home.html" class="back-link">← Kembali ke Beranda</a>
+  </div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Terima kasih sudah mengunjungi halaman website kami. Jika ingin mengetahui lebih lanjut mengenai Kolese Gonzaga, klik tombol di bawah!</p>
+  <a class="w3-button w3-round-xxlarge w3-dark-grey w3-margin-bottom" href="https://www.instagram.com/instagonzaga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Gonzaga</a>
+ <!-- Footer end. -->
+ </footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
 </body>
 </html>
